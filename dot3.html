@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table,tr,td,th{
+        border: 1px solid black ;
+        border-collapse: collapse;
+       } 
+    </style>
+    <style>
+        /* for divclass coloring aise hogi */
+        .divclass{
+            background-color: aquamarine;
+            display: inline;
+        }
+        /* for div id coloring aise hogi */
+        #seconddiv{
+            background-color:blanchedalmond;
+        }
+        /* if only div tag h tab coloring aise hogi */
+        /* div{
+            background-color: darkorange;
+        } */
+
+        span{
+            background-color:darksalmon;
+            font-size: larger;
+            /* display: block; */
+        }
+
+    </style>
+</head>
+<body>
+    <!--Implementation of Row span and Column span -->
+
+    <table>
+        <colgroup>
+        <col span="1">   
+        <col span="1" style="background-color:blueviolet">
+        <col span="1" style="background-color:burlywood"> 
+        <col span="2" style="background-color:darkgoldenrod">
+        <col span="1" style="background-color:honeydew"> 
+        <!-- if you want to hide any coloumn(letss take 5 th column here use "visibility collapse") -->
+        <!-- <col span="1" style="visibility: collapse"> -->
+
+        </colgroup>
+
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting Value</td>
+            <td>After Eating</td>
+            <td rowspan="2">Sleep Duration</td>
+            <td rowspan="2">Diet</td>
+        </tr>
+        <tr>
+            <td>minimum</td>
+            <td>maximum</td>
+            <td>2 hour after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+            <td>6 hours</td>
+            <td>Regular diet</td>
+        </tr>
+        <tr>
+            <td>Pre Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+            <td>9 hours</td>
+            <td>Green veggies</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+            <td>11 hours</td>
+            <td>fruits juices + eggs</td>
+        </tr>
+
+    </table>
+
+    <br>
+    <br>
+
+    <!-- Div is Block Element while span is Inline element-->
+    <!-- The <div> tag defines a division or a section in an HTML document. -->
+    <!-- The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+
+    <div class="divclass"> This is inside div</div>
+    <div id="seconddiv">This is second div</div>
+
+    <span>First Span</span>
+    <span>Second Span </span>
+
+    <!-- Semantic tags -->
+    <!-- A semantic element clearly describes its meaning to both the browser and the developer. -->
+    <!-- <article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<mark>,<nav>,<section>,<summary> -->
+        
+    <h3>Semantic Elements</h3>
+    <details open>
+        <summary>Overview</summary>
+        <ol>
+          <li>Cash on hand: $500.00</li>
+          <li>Current invoice: $75.30</li>
+          <li>Due date: 5/6/19</li>
+        </ol>
+      </details>
+ 
+      <h3>Iframe use</h3>
+      <iframe src="https://wikipedia.com" frameborder="0" height="500" width="500"></iframe>
+
+      <hr>
+
+      <!-- Harry se padhna h neeche ka content  -->
+      <!-- tut 7,tut8 -->
+
+      <h3>Ids and Classes Tutorial</h3>
+      <div id="mainBox" class="redBg blackBorder" >
+          this is mainbox
+      </div>
+      <span class="redBg"></span>
+      <!-- Emmet -->
+      <!-- .is for class and # is for id -->
+      <span class="redBg"></span>
+      <span id="mainspan"></span>
+      <div class="redBg backBorder anotherClass"></div>
+      <!-- Emmet takes div tag as default -->
+      <div class="blackBorder"></div>
+  
+      <!-- creating multiple elements using Emmet -->
+      <!-- span.myClass.myClass2.myClass3*4 + <Tab> to print 4 similar elements using emmet -->
+          <span class="myClass myClass2 myClass3">First</span>
+          <span class="myClass myClass2 myClass3">Second</span>
+          <span class="myClass myClass2 myClass3">Third</span>
+          <span class="myClass myClass2 myClass3">Fourth</span>
+
+     <h3>HTML Entities</h3>
+      <div class="container">
+        <p>This is a paragraph</p>
+   </div>
+      <div class="container">
+        <p>This is another &nbsp; &nbsp; paragraph with two spaces</p>
+        <p>paragraph is written like this &lt;p&gt; </p>
+        <p>pound is written like this &pound; </p>
+        <p>copyright is written like this &copy; </p>
+        <p>Another character is written like this &rAarr; </p>
+        <p>Empty character is written like this &#8203; </p>
+        <!-- for more entities search "HTML entities reference" -->  
+      </div>
+
+</body>
+ </html>
